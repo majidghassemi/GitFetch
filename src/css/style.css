@@ -1,0 +1,121 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 40rem;
+    background-size: cover;
+    background-position: 0 0;
+    background-attachment: fixed;
+    background-image: linear-gradient(to right top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .7)), url(../img/bg.jpg);
+    font-size: 62.5%;
+    font-weight: 300;
+    font-family: 'Open Sans Condensed',
+        sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container__header {
+    font-size: 3rem;
+    padding: .5rem 1rem;
+    background-color: rgb(0, 0, 0);
+    border-radius: 1px;
+    color: rgb(207, 154, 20);
+}
+
+
+.container__text {
+    font-size: 2rem;
+    margin-top: -6rem;
+    padding: .5rem;
+    background-color: whitesmoke;
+}
+
+.container__finder {
+    margin-top: -6rem;
+}
+
+.container__input {
+    border: 0;
+    border-bottom: 2px dashed rgb(207, 154, 20);
+    background-color: inherit;
+    font-family: inherit;
+    padding: .5 rem;
+    transition: all .5s;
+    font-size: 2rem;
+    color: white;
+    margin-right: 2rem;
+}
+
+.container__input:focus {
+    border-bottom: 2px solid rgba(245, 245, 245, 0.596);
+    transition: all .5s;
+    color: rgb(207, 154, 20);
+}
+
+.container__btn {
+    background-color: inherit;
+    border: 1px solid rgb(207, 154, 20);
+    padding: .6rem 1.5rem;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: all .4s;
+}
+
+.container__btn:hover {
+    background-color: rgb(207, 154, 20);
+    border-color: rgb(207, 154, 20);
+    transition: all .4s;
+    transform: translateY(-.25rem);
+}
+
+.container__result {
+    background-color: whitesmoke;
+    padding: .6rem;
+    margin-top: -8rem;
+}
+
+.result {
+    color: black;
+    font-size: 1.25rem;
+}
+
+.result:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.answer {
+    font-size: 1rem;
+    color: rgb(173, 130, 20);
+}
+
+a {
+    color: rgb(173, 130, 20);
+}
+
+a:hover {
+    color: rgb(105, 80, 16);
+}
