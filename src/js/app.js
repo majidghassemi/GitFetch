@@ -26,30 +26,38 @@ const fetchUser = async user => {
 const showData = _ => {
   fetchUser(inputValue.value)
     .then(res => {
-      if (res.data.message !== "Not Found") {
-        res1.innerHTML = `Name: <span class="answer">${res.data.name}</span>`;
-        res2.innerHTML = `Bio: <span class="answer">"${res.data.bio}"</span>`;
-        res3.innerHTML = `Repos: <span class="answer">${
-          res.data.public_repos
-        }</span>`;
-        res4.innerHTML = `Followers: <span class="answer">${
-          res.data.followers
-        }</span>`;
-        res5.innerHTML = `Following: <span class="answer">${
-          res.data.followers
-        }</span>`;
-        res6.innerHTML = `Company: <span class="answer">${
-          res.data.company
-        }</span>`;
-        res7.innerHTML = `Location: <span class="answer">${
-          res.data.location
-        }</span>`;
-        res8.innerHTML = `URL: <span class="answer"><a href="${
-          res.data.html_url
-        }"target="_blank">${res.data.html_url}</a></span>`;
-      } else {
-        alert(`This username: "${inputValue.value}" does'nt exist`);
-      }
+        if (inputValue.value !== "") {
+
+          if (res.data.message !== "Not Found") {
+            res1.innerHTML = `Name: <span class="answer">${
+              res.data.name
+            }</span>`;
+            res2.innerHTML = `Bio: <span class="answer">"${
+              res.data.bio
+            }"</span>`;
+            res3.innerHTML = `Repos: <span class="answer">${
+              res.data.public_repos
+            }</span>`;
+            res4.innerHTML = `Followers: <span class="answer">${
+              res.data.followers
+            }</span>`;
+            res5.innerHTML = `Following: <span class="answer">${
+              res.data.followers
+            }</span>`;
+            res6.innerHTML = `Company: <span class="answer">${
+              res.data.company
+            }</span>`;
+            res7.innerHTML = `Location: <span class="answer">${
+              res.data.location
+            }</span>`;
+            res8.innerHTML = `URL: <span class="answer"><a href="${
+              res.data.html_url
+            }"target="_blank">${res.data.html_url}</a></span>`;
+          } else {
+              alert(`This username: "${inputValue.value}" does'nt exist`);
+          }
+          }
+
     })
 
     .catch(error => {
