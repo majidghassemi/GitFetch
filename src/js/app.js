@@ -17,7 +17,7 @@ const client_secret = "29a4f4d258bce68c6f041951642989418446238a";
 
 const fetchUser = async user => {
   const api_call = await fetch(
-    `https://api.github.com/users/${user}?client_id=${client_id}&client_secret=${client_secret}`
+    `https://cors-anywhere.herokuapp.com/api.github.com/users/${user}?client_id=${client_id}&client_secret=${client_secret}`
   );
   const data = await api_call.json();
   return { data };
