@@ -42,7 +42,7 @@ const showData = _ => {
               res.data.followers
             }</span>`;
             res5.innerHTML = `Following: <span class="answer">${
-              res.data.followers
+              res.data.following
             }</span>`;
             res6.innerHTML = `Company: <span class="answer">${
               res.data.company
