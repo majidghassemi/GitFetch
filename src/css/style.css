@@ -93,7 +93,7 @@ body {
 }
 
 .container__result {
-    background-color: whitesmoke;
+    background-color: transparent;
     padding: .6rem;
     margin-top: -8rem;
 }

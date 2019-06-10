@@ -53,6 +53,11 @@ const showData = _ => {
             res8.innerHTML = `URL: <span class="answer"><a href="${
               res.data.html_url
             }"target="_blank">${res.data.html_url}</a></span>`;
+
+            resultBox.style.backgroundColor = "whitesmoke";
+            resultBox2.style.backgroundColor = "whitesmoke";
+
+            
           } else {
               alert(`This username: "${inputValue.value}" does'nt exist`);
           }
@@ -63,6 +68,8 @@ const showData = _ => {
     .catch(error => {
       alert(`Promise are rejected : ${error}`);
     });
+
+    
 };
 
 submitBtn.addEventListener("click", showData);
