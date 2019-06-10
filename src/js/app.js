@@ -87,7 +87,12 @@ document.addEventListener("keypress", event => {
 });
 
 
-
+function popUpGenerator(header, body, des) {
+  popUp.style.display = "flex";
+  popUpHeader.textContent = header;
+  popUpBody.textContent = body;
+  popUpDescription.textContent = des;
+}
 
 closePopUp.addEventListener("click", _ => {
   popUp.style.display = "none";
