@@ -82,6 +82,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 4px;
     transition: all .4s;
+    outline: none;
 }
 
 .container__btn:hover {
