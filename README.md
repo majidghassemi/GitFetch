@@ -1,5 +1,5 @@
 # GitFetch 🤙
    
-*Fetch users data in the simplest way 👻*
-### How can i use ?
-     Put username in the input field and get information about user such as *name, followers, followings, location* and etc...
+*Know about user and his/her information in github*
+### You can use ... :
+With putting username you want to know about that in input and press button to see all of you need *(Tadaaaaaaa!!)* :)
