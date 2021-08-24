@@ -2,4 +2,4 @@
    
 *Know about user and his/her information in github*
 ### You can use ... :
-With putting username you want to know about that in input and press button to see all of you need *(Tadaaaaaaa!!)* :)
+Just put the username that you want it to know about in the input section and press the button to see all of the information *(Tadaaaaaaa!!)* :)
